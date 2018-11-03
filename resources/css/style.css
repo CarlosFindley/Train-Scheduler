@@ -1,0 +1,62 @@
+body {
+    font-size: 1em;
+    /* font-family: "roboto", "Helvetica Neue", helvetica, sans-serif; */
+}
+
+#logo {
+ font-size: 1.2em;
+ color: rgba(0, 0, 0);
+ background: rgb(255, 255, 255, .8);
+ text-align: left;
+ padding: 1em;
+}
+
+.trainSchedulerStyle {
+    background-image: url(../images/trainH.png); /* img source: https://endlessdreamvacations.net/wp-content/uploads/2017/01/england-header.jpg */
+    background-size: cover;
+    background-position: center;
+    height: 23em;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    /* text-align: center; */
+}
+
+.addTrainStyle {
+    padding: 1em;
+    color: rgb(255, 255, 255);
+}
+
+.addTrainSpanStyle {
+    text-align: center;
+    font-size: 2.6em;
+    font-weight: 500;
+    margin-top: .4em;
+    margin-bottom: .3em;
+}
+
+/* .inputRowStyle {
+    margin-left: 3em;  figure out how to center input boxes without centering text or addind ems to left margin
+} */
+
+.submitBtnStyle {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2.1em;
+}
+
+.h2Style {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 1.2em;
+    margin-bottom: 2em;
+}
+
+.contentTableStyle {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.inputBoxStyle {
+    width: 15em;
+}
