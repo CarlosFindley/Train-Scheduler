@@ -15,7 +15,7 @@ body {
     background-image: url(../images/trainH.png); /* img source: https://endlessdreamvacations.net/wp-content/uploads/2017/01/england-header.jpg */
     background-size: cover;
     background-position: center;
-    height: 23em;
+    height: 24em;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: overlay;
@@ -53,10 +53,11 @@ body {
 }
 
 .contentTableStyle {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .inputBoxStyle {
     width: 15em;
+    height: 2.5em;
 }
