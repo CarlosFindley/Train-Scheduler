@@ -4,12 +4,17 @@ body {
     /* text-align: center; */
 }
 
-#logo {
+header {
+    color: rgba(0, 0, 0);
+    background: rgb(255, 255, 255, .8);
+    padding: 1em;
+    display: flex;
+    justify-content:space-between; 
+}
+
+
+#logo, #clock  {
  font-size: 1.2em;
- color: rgba(0, 0, 0);
- background: rgb(255, 255, 255, .8);
- text-align: left;
- padding: 1em;
 }
 
 .trainSchedulerStyle {
@@ -20,7 +25,6 @@ body {
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: overlay;
-    /* text-align: center; */
 }
 
 .addTrainStyle {
@@ -60,11 +64,5 @@ body {
 }
 
 .inputBoxStyle {
-    /* width: 15em; */
     height: 2.5em;
 }
-
-/* .main-container {
-    width: 960px;
-    margin: 0 auto;
-} */
