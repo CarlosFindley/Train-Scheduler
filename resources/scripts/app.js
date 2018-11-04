@@ -66,13 +66,40 @@ database.ref().on("child_added", function(childSnapshot) {
     console.log(trainDestination);
     console.log(trainTime);
     console.log(trainFrequency);
+
+    // code from excercises
+    // Grabbing the trainTime input and subtracting a year to make sure it comes before current time
+    // Putting the date in a var and console logging
+    var firstTimeConverted = moment(trainTime, "HH:mm").subtract(1, "years");
+    console.log(firstTimeConverted);
+
+    // Setting current Time
+    var currentTime = moment();
+    console.log("CURRENT TIME: " + moment(currentTime).format("HH:mm"));
+
+    // Difference in minutes betwwen irstTimeConverted and currentTime
+    var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+    console.log("DIFFERENCE IN TIME: " + diffTime);
+
+    // Modulating diffTime with trainFrequency to calculate time remainder in minutes
+    var tRemainder = diffTime % trainFrequency;
+    console.log(tRemainder);
+
+    // Minute Until Train 
+    var tMinutesTillTrain = trainFrequency - tRemainder;
+    console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
+
+    // Next Train
+    var nextTrainArrival = moment().add(tMinutesTillTrain, "minutes");
+    console.log("ARRIVAL TIME: " + moment(nextTrainArrival).format("HH:mm"));
   
-    // Create the new row
+    // Create the new row and add content to page
     var newRow = $("<tr>").append(
       $("<td>").text(trainName),
       $("<td>").text(trainDestination),
-      $("<td>").text(trainTime),
+      $("<td>").text(nextTrainArrival),
       $("<td>").text(trainFrequency),
+      $("<td>").text(tMinutesTillTrain),
     );
   
     // Append the new row to the table
