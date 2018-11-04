@@ -97,10 +97,10 @@ database.ref().on("child_added", function(childSnapshot) {
     var newRow = $("<tr>").append(
       $("<td>").text(trainName),
       $("<td>").text(trainDestination),
-      $("<td>").text(trainFrequency),
+      $("<td>").text(trainFrequency + " mins"),
       $("<td>").text(trainTime),
       $("<td>").text(nextTrainArrival),
-      $("<td>").text(tMinutesTillTrain),
+      $("<td>").text(tMinutesTillTrain + " mins"),
     );
   
     // Append the new row to the table
