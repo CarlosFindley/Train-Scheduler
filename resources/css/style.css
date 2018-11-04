@@ -69,18 +69,26 @@ header {
 .contentTableStyle {
     margin-left: 2em;
     margin-right: 2em;
+    margin-bottom: 2em;
 }
 
 .inputBoxStyle {
     height: 2.5em;
 }
 
-
+/* mobile responsiveness */
 @media screen and (max-width: 766px) {
     .trainSchedulerStyle {
         height: 27em;
     } .formContainer {
         width: 500px;
+    } .contentTableStyle {
+        margin-left: 0;
+        margin-right: 0;
+        border-bottom: solid rgb(0, 0, 0);
+    } .h2Style {
+        margin-top: 2em;
+        margin-bottom: 1.5em;
     }
 }
 
